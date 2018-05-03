@@ -1,0 +1,31 @@
+{
+  "name": "searchfrombigcamera",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "lint": "tslint -c tslint.json 'dev/**/*.ts'",
+    "upload": "gapps upload",
+    "watch": "watch 'npm run build && npm run upload' dev/",
+    "build": "webpack"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/google-apps-script": "^0.0.14",
+    "awesome-typescript-loader": "^3.2.3",
+    "es3ify-webpack-plugin": "^0.0.1",
+    "gas-webpack-plugin": "^0.2.1",
+    "tslint": "^5.7.0",
+    "typescript": "^2.5.2",
+    "watch": "^1.0.2",
+    "webpack": "^3.5.6"
+  },
+  "dependencies": {
+    "@types/buffers": "^0.1.31",
+    "@types/node": "^10.0.3",
+    "cheerio-httpcli": "^0.7.3",
+    "http": "0.0.0",
+    "jsdom": "^11.10.0"
+  }
+}
